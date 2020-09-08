@@ -11,8 +11,8 @@ public class Deck {
     }
 
     public void fillDeck(){
-        for (PlayingCard.Suit suit: PlayingCard.Suit.values()){
-            for (PlayingCard.Number number : PlayingCard.Number.values()){
+        for (Suit suit: Suit.values()){
+            for (Number number : Number.values()){
                 STACK.push(new PlayingCard(suit,number));
             }
         }

@@ -1,6 +1,7 @@
 public class PlayingCard implements Comparable<PlayingCard>{
 
     private final Suit suit;
+    private final Number number;
 
     @Override
     public String toString() {
@@ -8,33 +9,6 @@ public class PlayingCard implements Comparable<PlayingCard>{
                 "suit=" + suit +
                 ", number=" + number +
                 '}';
-    }
-
-    private final Number number;
-
-
-
-    public enum Suit{
-        SPADES,
-        HEARTS,
-        DIAMONDS,
-        CLUBS;
-    }
-
-    public enum Number{
-        KING,
-        QUEEN,
-        JACK,
-        TEN,
-        NINE,
-        EIGHT,
-        SEVEN,
-        SIX,
-        FIVE,
-        FOUR,
-        THREE,
-        TWO,
-        ACE;
     }
 
     public Suit getSuit() {
